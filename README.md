@@ -57,6 +57,8 @@
 
 This is a restaurant page that demonstrates user experience and user interaction with webpages
 
+The idea focuses on making the webpage easy to navigate and explore
+
 ## LIVE DEMO
  [Link to live demo](https://raw.githack.com/evabanegacom/restaurant-page/feature/dist/index.html) 
 
