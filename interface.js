@@ -16,8 +16,13 @@ function renderSectionOne(main) {
   firstChildDiv.className = 'odatabs'
   const firstChildPar = document.createElement('p')
   const em1 = document.createElement('em')
-  em1.className = 'p1'
-  em1.innerHTML = 'Drinks'
+  const firstLink = document.createElement('a');
+  const firstText1 = document.createTextNode('Drinks');
+  firstLink.title = 'Drinks'
+  firstLink.href='#Drinks'
+  firstLink.className = 'p1'
+  firstLink.appendChild(firstText1)
+  em1.appendChild(firstLink)
   firstChildPar.appendChild(em1)
   firstChildDiv.appendChild(firstChildPar)
   graphicDiv.appendChild(firstChildDiv)
@@ -26,8 +31,13 @@ function renderSectionOne(main) {
   secondChildDiv.className = 'odatabs'
   const secondChildPar = document.createElement('p')
   const em2 = document.createElement('em')
-  em2.className = 'p2'
-  em2.innerHTML = 'Food'
+  const secondLink = document.createElement('a');
+  const secondText1 = document.createTextNode('food');
+  secondLink.title = 'food'
+  secondLink.href='#food'
+  secondLink.className = 'p2'
+  secondLink.appendChild(secondText1)
+  em2.appendChild(secondLink)
   secondChildPar.appendChild(em2)
   secondChildDiv.appendChild(secondChildPar)
   graphicDiv.appendChild(secondChildDiv)
@@ -36,8 +46,13 @@ function renderSectionOne(main) {
   thirdChildDiv.className = 'odatabs'
   const thirdChildPar = document.createElement('p')
   const em3 = document.createElement('em')
-  em3.className = 'p3'
-  em3.innerHTML = 'Casino'
+  const thirdLink = document.createElement('a');
+  const thirdText1 = document.createTextNode('casino');
+  thirdLink.title = 'Casino'
+  thirdLink.href='#casino'
+  thirdLink.className = 'p3'
+  thirdLink.appendChild(thirdText1)
+  em3.appendChild(thirdLink)
   thirdChildPar.appendChild(em3)
   thirdChildDiv.appendChild(thirdChildPar)
   graphicDiv.appendChild(thirdChildDiv)
@@ -45,7 +60,13 @@ function renderSectionOne(main) {
   const fourthChildDiv = document.createElement('div')
   fourthChildDiv.className = 'odatabs'
   const fourthChildPar = document.createElement('p')
-  fourthChildPar.innerHTML = 'Games&Bars'
+  const fourthLink = document.createElement('a');
+  const fourthText1 = document.createTextNode('Games&Bar');
+  fourthLink.title = 'Games'
+  fourthLink.href='#facebook.com'
+  fourthLink.className = 'p4'
+  fourthLink.appendChild(fourthText1)
+  fourthChildPar.appendChild(fourthLink)
   fourthChildDiv.appendChild(fourthChildPar)
   graphicDiv.appendChild(fourthChildDiv)
 

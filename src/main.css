@@ -58,14 +58,24 @@ p {
 
 .p1 {
   color: yellow;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .p2 {
   color: rgb(60, 255, 0);
+  text-decoration: none;
+
 }
 
 .p3 {
   color: magenta;
+  text-decoration: none;
+}
+
+.p4 {
+  text-decoration: none;
+  color: white;
 }
 
 .marq {
