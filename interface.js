@@ -9,6 +9,46 @@ function renderSectionOne(main) {
   secondDiv.className = 'line';
   const thirdDiv = document.createElement('div');
   thirdDiv.className = 'line';
+  const graphicDiv = document.createElement('div')
+  graphicDiv.className = 'text-contain'
+
+  const firstChildDiv = document.createElement('div')
+  firstChildDiv.className = 'odatabs'
+  const firstChildPar = document.createElement('p')
+  const em1 = document.createElement('em')
+  em1.className = 'p1'
+  em1.innerHTML = 'Drinks'
+  firstChildPar.appendChild(em1)
+  firstChildDiv.appendChild(firstChildPar)
+  graphicDiv.appendChild(firstChildDiv)
+
+  const secondChildDiv = document.createElement('div')
+  secondChildDiv.className = 'odatabs'
+  const secondChildPar = document.createElement('p')
+  const em2 = document.createElement('em')
+  em2.className = 'p2'
+  em2.innerHTML = 'Food'
+  secondChildPar.appendChild(em2)
+  secondChildDiv.appendChild(secondChildPar)
+  graphicDiv.appendChild(secondChildDiv)
+
+  const thirdChildDiv = document.createElement('div')
+  thirdChildDiv.className = 'odatabs'
+  const thirdChildPar = document.createElement('p')
+  const em3 = document.createElement('em')
+  em3.className = 'p3'
+  em3.innerHTML = 'Casino'
+  thirdChildPar.appendChild(em3)
+  thirdChildDiv.appendChild(thirdChildPar)
+  graphicDiv.appendChild(thirdChildDiv)
+
+  const fourthChildDiv = document.createElement('div')
+  fourthChildDiv.className = 'odatabs'
+  const fourthChildPar = document.createElement('p')
+  fourthChildPar.innerHTML = 'Games&Bars'
+  fourthChildDiv.appendChild(fourthChildPar)
+  graphicDiv.appendChild(fourthChildDiv)
+
   const header = document.createElement('header');
   header.className = 'title-background';
   const names = document.createElement('h2');
@@ -17,13 +57,22 @@ function renderSectionOne(main) {
   marquee.className = 'marq';
   names.innerHTML = 'precious bar';
   names.className = 'title';
+
+  const middles = document.createElement('div')
+  middles.className = 'middle'
+  const middlesPara = document.createElement('p')
+  middlesPara.innerHTML = 'COME LETS HAVE A DRINK SIT DOWN'
+  middles.appendChild(middlesPara)
+
   header.appendChild(names);
   header.appendChild(marquee);
   navSlider.appendChild(firstDiv);
   navSlider.appendChild(secondDiv);
   navSlider.appendChild(thirdDiv);
   section.appendChild(navSlider);
+  section.appendChild(graphicDiv)
   section.appendChild(header);
+  section.appendChild(middles)
   main.appendChild(section);
 }
 

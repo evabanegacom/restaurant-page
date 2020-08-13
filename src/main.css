@@ -17,6 +17,57 @@
   padding: 10px;
 }
 
+p {
+  color: #eee;
+}
+
+.middle {
+  width: fit-content;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 20px;
+  background-color: cyan;
+  border: darkgreen 5px solid;
+}
+
+.middle p {
+  text-align: center;
+  color: red;
+}
+
+.odatabs {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: -1em;
+}
+
+.odatabs p {
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+  font-weight: 700;
+}
+
+.p1 {
+  color: yellow;
+}
+
+.p2 {
+  color: rgb(60, 255, 0);
+}
+
+.p3 {
+  color: magenta;
+}
+
 .marq {
   color: red;
   font-weight: 700;
@@ -149,9 +200,6 @@
   float: right;
 }
 
-p {
-  color: #eee;
-}
 
 /* restaurant information */
 
@@ -194,6 +242,18 @@ p {
   grid-template-columns: 1fr;
 }
 
+@-webkit-keyframes glow {
+  from {
+    color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  }
+
+  to {
+    color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}
+
 @keyframes openNav {
   100% {
     transform: translateX(0%);
@@ -223,5 +283,15 @@ p {
 
   .contact-content {
     padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-contain {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    line-height: 50px;
+    padding-left: 10px;
   }
 }
