@@ -1,4 +1,4 @@
-# JS-Tic-Tac-Toe
+# RESTAURANT-PAGE
 
 <!--
 *** Thanks for checking out this README Template. If you have a suggestion that would
