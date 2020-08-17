@@ -1,4 +1,4 @@
-function renderSectionOne(main) {
+function renderSectionOne(div) {
   const section = document.createElement('section');
   section.id = 'landing-page';
   const navSlider = document.createElement('div');
@@ -9,66 +9,66 @@ function renderSectionOne(main) {
   secondDiv.className = 'line';
   const thirdDiv = document.createElement('div');
   thirdDiv.className = 'line';
-  const graphicDiv = document.createElement('div')
-  graphicDiv.className = 'text-contain'
+  const graphicDiv = document.createElement('div');
+  graphicDiv.className = 'text-contain';
 
-  const firstChildDiv = document.createElement('div')
-  firstChildDiv.className = 'odatabs'
-  const firstChildPar = document.createElement('p')
-  const em1 = document.createElement('em')
+  const firstChildDiv = document.createElement('div');
+  firstChildDiv.className = 'odatabs';
+  const firstChildPar = document.createElement('p');
+  const em1 = document.createElement('em');
   const firstLink = document.createElement('a');
   const firstText1 = document.createTextNode('Drinks');
-  firstLink.title = 'Drinks'
-  firstLink.href='#Drinks'
-  firstLink.className = 'p1'
-  firstLink.appendChild(firstText1)
-  em1.appendChild(firstLink)
-  firstChildPar.appendChild(em1)
-  firstChildDiv.appendChild(firstChildPar)
-  graphicDiv.appendChild(firstChildDiv)
+  firstLink.title = 'Drinks';
+  firstLink.href = '#Drinks';
+  firstLink.className = 'p1';
+  firstLink.appendChild(firstText1);
+  em1.appendChild(firstLink);
+  firstChildPar.appendChild(em1);
+  firstChildDiv.appendChild(firstChildPar);
+  graphicDiv.appendChild(firstChildDiv);
 
-  const secondChildDiv = document.createElement('div')
-  secondChildDiv.className = 'odatabs'
-  const secondChildPar = document.createElement('p')
-  const em2 = document.createElement('em')
+  const secondChildDiv = document.createElement('div');
+  secondChildDiv.className = 'odatabs';
+  const secondChildPar = document.createElement('p');
+  const em2 = document.createElement('em');
   const secondLink = document.createElement('a');
   const secondText1 = document.createTextNode('food');
-  secondLink.title = 'food'
-  secondLink.href='#food'
-  secondLink.className = 'p2'
-  secondLink.appendChild(secondText1)
-  em2.appendChild(secondLink)
-  secondChildPar.appendChild(em2)
-  secondChildDiv.appendChild(secondChildPar)
-  graphicDiv.appendChild(secondChildDiv)
+  secondLink.title = 'food';
+  secondLink.href = '#food';
+  secondLink.className = 'p2';
+  secondLink.appendChild(secondText1);
+  em2.appendChild(secondLink);
+  secondChildPar.appendChild(em2);
+  secondChildDiv.appendChild(secondChildPar);
+  graphicDiv.appendChild(secondChildDiv);
 
-  const thirdChildDiv = document.createElement('div')
-  thirdChildDiv.className = 'odatabs'
-  const thirdChildPar = document.createElement('p')
-  const em3 = document.createElement('em')
+  const thirdChildDiv = document.createElement('div');
+  thirdChildDiv.className = 'odatabs';
+  const thirdChildPar = document.createElement('p');
+  const em3 = document.createElement('em');
   const thirdLink = document.createElement('a');
   const thirdText1 = document.createTextNode('casino');
-  thirdLink.title = 'Casino'
-  thirdLink.href='#casino'
-  thirdLink.className = 'p3'
-  thirdLink.appendChild(thirdText1)
-  em3.appendChild(thirdLink)
-  thirdChildPar.appendChild(em3)
-  thirdChildDiv.appendChild(thirdChildPar)
-  graphicDiv.appendChild(thirdChildDiv)
+  thirdLink.title = 'Casino';
+  thirdLink.href = '#casino';
+  thirdLink.className = 'p3';
+  thirdLink.appendChild(thirdText1);
+  em3.appendChild(thirdLink);
+  thirdChildPar.appendChild(em3);
+  thirdChildDiv.appendChild(thirdChildPar);
+  graphicDiv.appendChild(thirdChildDiv);
 
-  const fourthChildDiv = document.createElement('div')
-  fourthChildDiv.className = 'odatabs'
-  const fourthChildPar = document.createElement('p')
+  const fourthChildDiv = document.createElement('div');
+  fourthChildDiv.className = 'odatabs';
+  const fourthChildPar = document.createElement('p');
   const fourthLink = document.createElement('a');
   const fourthText1 = document.createTextNode('Games&Bar');
-  fourthLink.title = 'Games'
-  fourthLink.href='#facebook.com'
-  fourthLink.className = 'p4'
-  fourthLink.appendChild(fourthText1)
-  fourthChildPar.appendChild(fourthLink)
-  fourthChildDiv.appendChild(fourthChildPar)
-  graphicDiv.appendChild(fourthChildDiv)
+  fourthLink.title = 'Games';
+  fourthLink.href = '#games';
+  fourthLink.className = 'p4';
+  fourthLink.appendChild(fourthText1);
+  fourthChildPar.appendChild(fourthLink);
+  fourthChildDiv.appendChild(fourthChildPar);
+  graphicDiv.appendChild(fourthChildDiv);
 
   const header = document.createElement('header');
   header.className = 'title-background';
@@ -79,11 +79,11 @@ function renderSectionOne(main) {
   names.innerHTML = 'precious bar';
   names.className = 'title';
 
-  const middles = document.createElement('div')
-  middles.className = 'middle'
-  const middlesPara = document.createElement('p')
-  middlesPara.innerHTML = 'COME LETS HAVE A DRINK SIT DOWN'
-  middles.appendChild(middlesPara)
+  const middles = document.createElement('div');
+  middles.className = 'middle';
+  const middlesPara = document.createElement('p');
+  middlesPara.innerHTML = 'COME LETS HAVE A DRINK SIT DOWN';
+  middles.appendChild(middlesPara);
 
   header.appendChild(names);
   header.appendChild(marquee);
@@ -91,13 +91,13 @@ function renderSectionOne(main) {
   navSlider.appendChild(secondDiv);
   navSlider.appendChild(thirdDiv);
   section.appendChild(navSlider);
-  section.appendChild(graphicDiv)
+  section.appendChild(graphicDiv);
   section.appendChild(header);
-  section.appendChild(middles)
-  main.appendChild(section);
+  section.appendChild(middles);
+  div.appendChild(section);
 }
 
-function renderSectionTwo(main) {
+function renderSectionTwo(div) {
   const section = document.createElement('section');
   section.className = 'nav-slider-section';
   const button = document.createElement('button');
@@ -127,10 +127,10 @@ function renderSectionTwo(main) {
   childSection.appendChild(ul);
   section.appendChild(button);
   section.appendChild(childSection);
-  main.appendChild(section);
+  div.appendChild(section);
 }
 
-function renderSectionThree(main) {
+function renderSectionThree(div) {
   const section = document.createElement('section');
   section.id = 'menu';
   const h2 = document.createElement('h2');
@@ -361,10 +361,10 @@ function renderSectionThree(main) {
   section.appendChild(secondSection);
 
 
-  main.appendChild(section);
+  div.appendChild(section);
 }
 
-function renderSectionFour(main) {
+function renderSectionFour(div) {
   const section = document.createElement('section');
   section.id = 'restaurant-info';
   const deputySection = document.createElement('section');
@@ -423,16 +423,20 @@ function renderSectionFour(main) {
 
   section.appendChild(deputySection);
 
-  main.appendChild(section);
+  div.appendChild(section);
 }
 
 function renderMain() {
-  const main = document.createElement('main');
-  renderSectionOne(main);
-  renderSectionTwo(main);
-  renderSectionThree(main);
-  renderSectionFour(main);
-  document.body.appendChild(main);
+  const menu = document.querySelector('#all');
+  const div = document.createElement('div');
+  div.id = 'suball';
+  div.classList = 'biggestdiv';
+  renderSectionOne(div);
+  renderSectionTwo(div);
+  renderSectionThree(div);
+  renderSectionFour(div);
+  menu.appendChild(div);
+  document.body.appendChild(menu);
 }
 
 export default renderMain;

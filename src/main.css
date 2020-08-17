@@ -65,7 +65,18 @@ p {
 .p2 {
   color: rgb(60, 255, 0);
   text-decoration: none;
+}
 
+.last-div {
+  display: block;
+}
+
+.opened-div {
+  display: block;
+}
+
+.last-div p {
+  font-size: 100px;
 }
 
 .p3 {
@@ -210,6 +221,16 @@ p {
   float: right;
 }
 
+.change {
+  color: red;
+}
+
+#about {
+  background-image: url('./resta.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
 
 /* restaurant information */
 
@@ -235,6 +256,29 @@ p {
   line-height: 30px;
 }
 
+.anotherdiv {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.anotherdiv p {
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+  font-weight: 700;
+}
+
+.food {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.drinkdiv p {
+  cursor: pointer;
+}
+
 .phone {
   margin-bottom: 0;
   font-size: 1em;
@@ -245,6 +289,258 @@ p {
 .business-hours,
 .contact-content {
   padding: 10px;
+}
+
+.forms {
+  width: 90%;
+  line-height: 40px;
+  margin: auto;
+}
+
+.header {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.header h2 {
+  color: #eee;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.head {
+  float: left;
+}
+
+.ul {
+  float: right;
+  margin-top: 20px;
+  background-color: gold;
+}
+
+.ul p {
+  display: inline;
+  padding: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: blue !important;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 1%;
+}
+
+.showcase h1 {
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+}
+
+.showcase h3 {
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  letter-spacing: 2px;
+}
+
+.category {
+  color: #fff;
+  margin-top: 5%;
+  display: flex;
+  text-align: center;
+  font-family: cursive;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 3%;
+}
+
+.btn {
+  background-color: gold;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-left: 45%;
+  margin-top: 20px;
+}
+
+.btn p {
+  color: blue;
+  font-weight: 700;
+}
+
+.snacks,
+.grill {
+  padding-left: 1rem;
+}
+
+.snackp {
+  color: gold;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.foodclass {
+  background: url('./lisa.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.forms input {
+  width: 100%;
+  height: 30px;
+  margin: auto;
+}
+
+.forms label {
+  width: 30%;
+}
+
+.reserve {
+  width: 30%;
+  background-color: black;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.baby {
+  line-height: 40px;
+  width: 80%;
+}
+
+.drinksection {
+  width: 100%;
+}
+
+.menudiv {
+  text-align: center;
+}
+
+.themain {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card.side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.drinkspage {
+  background: pink no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.href {
+  background: red;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lastlink {
+  cursor: pointer;
+}
+
+.href:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.cardimage {
+  width: 100%;
+  transition: all 0.5s;
+  height: 300px;
+}
+
+.contactform {
+  background: url('./contact.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.menuparagraph {
+  color: black;
+}
+
+.blogcontent {
+  text-align: center;
+  background: rgb(255, 243, 192);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  line-height: 30px;
+}
+
+.atlast {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+}
+
+.h3color {
+  color: blue;
+}
+
+.butt {
+  width: 100%;
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+  height: 30px;
+  margin-top: 20px;
+  background-color: blue;
+  border: none;
+}
+
+#drinks {
+  background-image: url('./drinks.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.colors {
+  color: red;
+  margin-right: 10px;
 }
 
 .info-container {
@@ -260,7 +556,7 @@ p {
 
   to {
     color: gray;
-    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 0 90px #00fff2;
   }
 }
 
