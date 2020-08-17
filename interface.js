@@ -61,7 +61,7 @@ function renderSectionOne(div) {
   fourthChildDiv.className = 'odatabs';
   const fourthChildPar = document.createElement('p');
   const fourthLink = document.createElement('a');
-  const fourthText1 = document.createTextNode('Games&Bar');
+  const fourthText1 = document.createTextNode('Reservation');
   fourthLink.title = 'Games';
   fourthLink.href = '#games';
   fourthLink.className = 'p4';
