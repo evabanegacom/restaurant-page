@@ -14,12 +14,16 @@ function tabsagain(div) {
   newlistpar1.className = 'active foodlinks';
   const newlistpar2 = document.createElement('p');
   newlistpar2.innerHTML = 'food';
+  newlistpar2.className = 'linkdrink';
 
   const newlistpar3 = document.createElement('p');
 
   newlistpar3.innerHTML = 'casino';
+  newlistpar3.classList = 'fordrinks';
+
   const newlistpar4 = document.createElement('p');
-  newlistpar4.innerHTML = 'Games';
+  newlistpar4.innerHTML = 'Contact';
+  newlistpar4.className = 'forcontact';
 
 
   newnavlist.appendChild(newlistpar1);

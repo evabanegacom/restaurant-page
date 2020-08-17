@@ -29,6 +29,15 @@ const contact = document.querySelector('.p1');
 const homecontact = document.querySelector('.tohome');
 const aboutdrinks = document.querySelector('.aboutdrinks');
 const aboutfood = document.querySelector('.aboutfood');
+const drinklink = document.querySelector('.linkdrink');
+const fordrinks = document.querySelector('.fordrinks');
+const forcontact = document.querySelector('.forcontact');
+const menucard = document.querySelector('.btn2');
+const menucard1 = document.querySelector('.btn3');
+const menucard2 = document.querySelector('.btn4');
+const reserved = document.querySelector('.reserved');
+const contactfood = document.querySelector('.contactfood');
+const foodmenu = document.querySelector('.foodmenucard');
 
 
 function closeNavSlider() {
@@ -116,6 +125,74 @@ aboutfood.onclick = function lasthome2() {
   document.querySelector('.contact').classList.remove('hide-tab');
   document.querySelector('.contact').classList.add('show-tab');
 };
+
+drinklink.addEventListener('click', () => {
+  document.querySelector('.foodclass').classList.remove('show-tab');
+  document.querySelector('.foodclass').classList.add('hide-tab');
+  document.querySelector('.new').classList.remove('hide-tab');
+  document.querySelector('.new').classList.add('show-tab');
+});
+
+fordrinks.addEventListener('click', () => {
+  document.querySelector('.foodclass').classList.remove('show-tab');
+  document.querySelector('.foodclass').classList.add('hide-tab');
+  document.querySelector('.drinkspage').classList.remove('hide-tab');
+  document.querySelector('.drinkspage').classList.add('show-tab');
+});
+
+forcontact.addEventListener('click', () => {
+  document.querySelector('.foodclass').classList.remove('show-tab');
+  document.querySelector('.foodclass').classList.add('hide-tab');
+  document.querySelector('.contact').classList.remove('hide-tab');
+  document.querySelector('.contact').classList.add('show-tab');
+});
+
+menucard.onclick = function forreserve() {
+  document.querySelector('.drinkspage').classList.remove('show-tab');
+  document.querySelector('.drinkspage').classList.add('hide-tab');
+  document.querySelector('.aboutpage').classList.remove('hide-tab');
+  document.querySelector('.aboutpage').classList.add('show-tab');
+  document.querySelector('.new').classList.remove('hide-tab');
+  document.querySelector('.new').classList.add('show-tab');
+};
+
+menucard1.addEventListener('click', () => {
+  document.querySelector('.drinkspage').classList.remove('show-tab');
+  document.querySelector('.drinkspage').classList.add('hide-tab');
+  document.querySelector('.foodclass').classList.remove('hide-tab');
+  document.querySelector('.foodclass').classList.add('show-tab');
+});
+
+menucard2.addEventListener('click', () => {
+  document.querySelector('.drinkspage').classList.remove('show-tab');
+  document.querySelector('.drinkspage').classList.add('hide-tab');
+  document.querySelector('.contact').classList.remove('hide-tab');
+  document.querySelector('.contact').classList.add('show-tab');
+});
+
+reserved.addEventListener('click', () => {
+  document.querySelector('.contact').classList.remove('show-tab');
+  document.querySelector('.contact').classList.add('hide-tab');
+  document.querySelector('.aboutpage').classList.remove('hide-tab');
+  document.querySelector('.aboutpage').classList.add('show-tab');
+  document.querySelector('.new').classList.remove('hide-tab');
+  document.querySelector('.new').classList.add('show-tab');
+});
+
+contactfood.addEventListener('click', () => {
+  document.querySelector('.contact').classList.remove('show-tab');
+  document.querySelector('.contact').classList.add('hide-tab');
+  document.querySelector('.foodclass').classList.remove('hide-tab');
+  document.querySelector('.foodclass').classList.add('show-tab');
+});
+
+foodmenu.addEventListener('click', () => {
+  document.querySelector('.contact').classList.remove('show-tab');
+  document.querySelector('.contact').classList.add('hide-tab');
+  document.querySelector('.drinkspage').classList.remove('hide-tab');
+  document.querySelector('.drinkspage').classList.add('show-tab');
+});
+
 
 openNavClick.onclick = function openNavClick() {
   navSliderSection.classList.remove('closeNav');

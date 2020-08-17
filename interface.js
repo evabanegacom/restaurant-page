@@ -17,7 +17,7 @@ function renderSectionOne(div) {
   const firstChildPar = document.createElement('p');
   const em1 = document.createElement('em');
   const firstLink = document.createElement('a');
-  const firstText1 = document.createTextNode('Drinks');
+  const firstText1 = document.createTextNode('contact');
   firstLink.title = 'Drinks';
   firstLink.href = '#Drinks';
   firstLink.className = 'p1';

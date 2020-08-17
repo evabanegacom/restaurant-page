@@ -7,12 +7,15 @@ function last(div) {
   last1.innerHTML = 'HOME';
   last1.className = 'tohome lastlink';
   const last2 = document.createElement('p');
-  last2.innerHTML = 'HOME';
+  last2.innerHTML = 'Reservation';
+  last2.className = 'reserved lastlink';
   const last3 = document.createElement('p');
-  last3.innerHTML = 'HOME';
+  last3.innerHTML = 'food';
+  last3.className = 'contactfood lastlink';
 
   const last4 = document.createElement('p');
-  last4.innerHTML = 'HOME';
+  last4.innerHTML = 'Menu';
+  last4.className = 'foodmenucard lastlink';
 
   lastlinks.appendChild(last1);
   lastlinks.appendChild(last2);

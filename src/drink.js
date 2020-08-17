@@ -15,72 +15,72 @@ function test(div) {
   const divmainchild = document.createElement('div');
   divmainchild.className = 'card';
   const divimage = new Image(100, 100);
-  divimage.setAttribute('src', './resta.jpg');
+  divimage.setAttribute('src', './forks.jpg');
   divimage.className = 'cardimage';
   const divcontent = document.createElement('div');
   divcontent.className = 'blogcontent';
   const divh3 = document.createElement('h3');
-  divh3.innerHTML = 'yes its h3';
+  divh3.innerHTML = 'Have breakfast anytime';
   const h3span = document.createElement('p');
-  h3span.innerHTML = 'this tutorial is annoying';
+  h3span.innerHTML = 'these are our fodd and drinks collection';
   h3span.className = 'h3color';
   const pardiv = document.createElement('p');
   pardiv.innerHTML = 'hello';
   const parlink = document.createElement('p');
   parlink.className = 'btn1 href';
-  parlink.innerHTML = 'linking';
+  parlink.innerHTML = 'Home';
 
   const secondchild = document.createElement('div');
   secondchild.className = 'card';
   const secondimage = new Image(100, 100);
-  secondimage.setAttribute('src', './resta.jpg');
+  secondimage.setAttribute('src', './fork.jpg');
   secondimage.className = 'cardimage';
   const secondcontent = document.createElement('div');
   secondcontent.className = 'blogcontent';
   const secondh3 = document.createElement('h3');
-  secondh3.innerHTML = 'yes its h3';
+  secondh3.innerHTML = 'Have breakfast anytime';
   const secondh3span = document.createElement('p');
-  secondh3span.innerHTML = 'this tutorial is annoying';
+  secondh3span.innerHTML = 'these are our fodd and drinks collection';
   secondh3span.className = 'h3color';
   const secondpardiv = document.createElement('p');
   secondpardiv.innerHTML = 'hello';
   const secondparlink = document.createElement('p');
   secondparlink.className = 'btn2 href';
-  secondparlink.innerHTML = 'linking';
+  secondparlink.innerHTML = 'reservation';
 
 
   const thirdcontent = document.createElement('div');
   thirdcontent.className = 'blogcontent';
   const thirdh3 = document.createElement('h3');
-  thirdh3.innerHTML = 'yes its h3';
+  thirdh3.innerHTML = 'Have breakfast anytime';
   const thirdh3span = document.createElement('p');
-  thirdh3span.innerHTML = 'this tutorial is annoying';
+  thirdh3span.innerHTML = 'these are our fodd and drinks collection';
   thirdh3span.className = 'h3color';
   const thirdpardiv = document.createElement('p');
   thirdpardiv.innerHTML = 'hello';
   const thirdparlink = document.createElement('p');
-  thirdparlink.className = 'btn1 href';
-  thirdparlink.innerHTML = 'linking';
+  thirdparlink.className = 'btn3 href';
+  thirdparlink.innerHTML = 'Food';
 
 
   const fourthcontent = document.createElement('div');
   fourthcontent.className = 'blogcontent';
   const fourthh3 = document.createElement('h3');
-  fourthh3.innerHTML = 'yes its h3';
+  fourthh3.innerHTML = 'Have breakfast anytime';
   const fourthh3span = document.createElement('p');
-  fourthh3span.innerHTML = 'this tutorial is annoying';
+  fourthh3span.innerHTML = 'these are our fodd and drinks collection';
   fourthh3span.className = 'h3color';
   const fourthpardiv = document.createElement('p');
   fourthpardiv.innerHTML = 'hello';
   const fourthparlink = document.createElement('p');
-  fourthparlink.className = 'btn1 href';
-  fourthparlink.innerHTML = 'linking';
+  fourthparlink.className = 'btn4 href';
+  fourthparlink.innerHTML = 'contact';
 
 
   const thirdchild = document.createElement('div');
   thirdchild.className = 'card';
   const thirdimage = new Image(100, 100);
-  thirdimage.setAttribute('src', './resta.jpg');
+  thirdimage.setAttribute('src', './drinks.jpg');
   thirdimage.className = 'cardimage';
 
   const fourthchild = document.createElement('div');

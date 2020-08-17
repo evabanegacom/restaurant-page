@@ -18,7 +18,7 @@ function about(div) {
   divitem3.className = 'aboutdrinks';
   const divpar4 = document.createElement('div');
   const divitem4 = document.createElement('p');
-  divitem4.innerHTML = 'food';
+  divitem4.innerHTML = 'contact';
   divitem4.className = 'aboutfood';
 
   const reservationdiv = document.createElement('div');
